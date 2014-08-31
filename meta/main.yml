@@ -3,6 +3,7 @@
 dependencies:
 
   - { role: elao.base }
+  - { role: elao.ruby }
 
 galaxy_info:
 

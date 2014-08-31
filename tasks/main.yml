@@ -1,7 +1,9 @@
 ---
 
 - name: packages
-  shell: >
-    gem install sass -v "{{ version }}"
-    creates=/usr/local/bin/sass
+  gem: >
+    name=sass
+    version={{ elao_sass_version }}
+    state=present
+    user_install=no
   sudo: yes
